@@ -17,11 +17,12 @@ var MEME_SETTINGS = {
   fontSizeOpts: [
     {text: 'Small text', value: 14},
     {text: 'Medium text', value: 24},
-    {text: 'Large text', value: 36}
+    {text: 'Large text', value: 36},
+    {text: 'XXL text', value: 60}
   ],
 
   headlineText: 'Write your own headline', // Default headline text.
-  height: 378, // Canvas rendering height.
+  height: 512, // Canvas rendering height.
   imageScale: 1, // Background image scale.
   imageSrc: '', // Default background image path. MUST reside on host domain, or use base64 data.
   overlayAlpha: 0.5, // Opacity of image overlay.
@@ -68,5 +69,5 @@ var MEME_SETTINGS = {
     {text: "No watermark", value: '<%= image_path("blank.gif") %>' }
   ],
 
-  width: 755 // Canvas rendering width.
+  width: 1024 // Canvas rendering width.
 };
