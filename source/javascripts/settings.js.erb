@@ -44,7 +44,7 @@ var MEME_SETTINGS = {
   textShadow: false, // Text shadow toggle.
   textShadowEdit: true, // Toggles text shadow control within the editor.
   watermarkAlpha: 1, // Opacity of watermark image.
-  watermarkMaxWidthRatio: 0.25, // Maximum allowed width of watermark (percentage of total canvas width).
+  watermarkMaxWidthRatio: 0.15, // Maximum allowed width of watermark (percentage of total canvas width).
 
   // Path to the watermark image source, or blank for no watermark:
   // Alternatively, use '<%= asset_data_uri("vox.png") %>' to populate the watermark with base64 data, avoiding Cross-Origin issues.
@@ -54,10 +54,10 @@ var MEME_SETTINGS = {
   // NOTE: only populate the "data" attributes with base64 data when concerned about Cross-Origin requests...
   // Otherwise, just leave "data" attributes blank and allow images to load from your server.
   watermarkOpts: [
-    // {text: 'Vox', value: '<%= image_path("vox.png") %>', data: '<%= asset_data_uri("vox.png") %>'},
-    // {text: 'The Verge', value: '<%= image_path("theverge.png") %>', data: ''}
-    {text: "Fusion - Full", value: '<%= image_path("fusion-full.png") %>' },
-    {text: "Fusion - F", value: '<%= image_path("fusion-f.png") %>' },
+    {text: "Fusion logo - white", value: '<%= image_path("logo-fusion-f-white.png") %>' },
+    {text: "Fusion logo - green", value: '<%= image_path("logo-fusion-f-green.png") %>' },
+    {text: "Fusion logo - black", value: '<%= image_path("logo-fusion-f-black.png") %>' },
+    {text: "Fusion logo - gray", value: '<%= image_path("logo-fusion-f-gray.png") %>' },
     {text: "No watermark", value: '<%= image_path("blank.gif") %>' }
   ],
 
